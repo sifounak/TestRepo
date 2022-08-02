@@ -1,0 +1,44 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "properties": {
+    "Date": "02-Aug-2022 14:42:50",
+    "Release": "R2023a",
+    "Configuration": "active"
+  },
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Code Analyzer",
+          "version": "1.0"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileWithSingleIssue.m",
+                  "uriBaseId": "file:///TestRepo/"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 1,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
