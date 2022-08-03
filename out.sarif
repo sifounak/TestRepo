@@ -1,6 +1,5 @@
 {
   "version": "2.1.0",
-  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "properties": {
     "Date": "02-Aug-2022 14:42:50",
     "Release": "R2023a",
