@@ -23,7 +23,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
+                  "uri": "dFileMultipleIssues.m",
                   "uriBaseId": "file:///TestRepo/"
                 },
                 "region": {
@@ -46,7 +46,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
+                  "uri": "dFileMultipleIssues.m",
                   "uriBaseId": "file:///TestRepo/"
                 },
                 "region": {
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
+                  "uri": "dFileMultipleIssues.m",
                   "uriBaseId": "file:///TestRepo/"
                 },
                 "region": {
@@ -92,7 +92,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
+                  "uri": "dFileMultipleIssues.m",
                   "uriBaseId": "file:///TestRepo/"
                 },
                 "region": {
