@@ -12,23 +12,25 @@
           "name": "Code Analyzer"
         }
       },
-      "results": {
-        "ruleId": "BDFIL",
-        "level": "error",
-        "message": {
-          "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "4FilenameBeginsWithNumber.m",
-                "uriBaseId": "file:///TestRepo/"
+      "results": [
+        {
+          "ruleId": "BDFIL",
+          "level": "error",
+          "message": {
+            "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "4FilenameBeginsWithNumber.m",
+                  "uriBaseId": "file:///TestRepo/"
+                }
               }
             }
-          }
-        ]
-      }
+          ]
+        }
+      ]
     }
   ]
 }
