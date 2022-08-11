@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "10-Aug-2022 13:56:11",
+    "Date": "11-Aug-2022 13:08:02",
     "Release": "R2023a",
     "CodeAnalyzerConfiguration": "active"
   },
@@ -14,6 +14,115 @@
       },
       "results": [
         {
+          "ruleId": "BDFIL",
+          "level": "error",
+          "message": {
+            "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "4FilenameBeginsWithNumber.m",
+                  "uriBaseId": "%SRCROOT%"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileMultipleErrors.m",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "NOPTS",
+          "level": "note",
+          "message": {
+            "text": "Add a semicolon after the statement to hide the output (in a script)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileMultipleErrors.m",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 6,
+                  "endColumn": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AGROW",
+          "level": "note",
+          "message": {
+            "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileMultipleErrors.m",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "endLine": 4,
+                  "startColumn": 5,
+                  "endColumn": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "NOEFF",
+          "level": "warning",
+          "message": {
+            "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileMultipleErrors.m",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 7,
+                  "endLine": 7,
+                  "startColumn": 1,
+                  "endColumn": 13
+                }
+              }
+            }
+          ]
+        },
+        {
           "ruleId": "DRNDINT",
           "level": "error",
           "message": {
@@ -24,7 +133,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "file:///TestRepo/"
+                  "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
                   "startLine": 1,
@@ -47,7 +156,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "file:///TestRepo/"
+                  "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
                   "startLine": 2,
@@ -70,7 +179,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "file:///TestRepo/"
+                  "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
                   "startLine": 4,
@@ -93,13 +202,36 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "file:///TestRepo/"
+                  "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
                   "startLine": 7,
                   "endLine": 7,
                   "startColumn": 1,
                   "endColumn": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "dFileWithSingleIssue.m",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 1,
+                  "endColumn": 8
                 }
               }
             }
