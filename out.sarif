@@ -1,9 +1,9 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "11-Aug-2022 13:08:02",
+    "Date": "30-Aug-2022 15:00:32",
     "Release": "R2023a",
-    "CodeAnalyzerConfiguration": "active"
+    "Configuration": "active"
   },
   "runs": [
     {
@@ -11,231 +11,97 @@
         "driver": {
           "name": "Code Analyzer"
         }
+      }
+    },
+    {
+      "ruleID": "DRNDINT",
+      "level": "error",
+      "message": {
+        "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
       },
-      "results": [
+      "locations": [
         {
-          "ruleId": "BDFIL",
-          "level": "error",
-          "message": {
-            "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "4FilenameBeginsWithNumber.m",
-                  "uriBaseId": "%SRCROOT%"
-                }
-              }
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "dFileMultipleIssues.m",
+              "uriBaseId": "%SRCROOT%"
             }
-          ]
-        },
+          },
+          "region": {
+            "startLine": 1,
+            "endLine": 1,
+            "startColumn": 1,
+            "endColumn": 7
+          }
+        }
+      ]
+    },
+    {
+      "ruleID": "NOPTS",
+      "level": "note",
+      "message": {
+        "text": "Add a semicolon after the statement to hide the output (in a script)."
+      },
+      "locations": [
         {
-          "ruleId": "DRNDINT",
-          "level": "error",
-          "message": {
-            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "endColumn": 8
-                }
-              }
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "dFileMultipleIssues.m",
+              "uriBaseId": "%SRCROOT%"
             }
-          ]
-        },
+          },
+          "region": {
+            "startLine": 2,
+            "endLine": 2,
+            "startColumn": 6,
+            "endColumn": 6
+          }
+        }
+      ]
+    },
+    {
+      "ruleID": "AGROW",
+      "level": "note",
+      "message": {
+        "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
+      },
+      "locations": [
         {
-          "ruleId": "NOPTS",
-          "level": "note",
-          "message": {
-            "text": "Add a semicolon after the statement to hide the output (in a script)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 2,
-                  "endLine": 2,
-                  "startColumn": 6,
-                  "endColumn": 7
-                }
-              }
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "dFileMultipleIssues.m",
+              "uriBaseId": "%SRCROOT%"
             }
-          ]
-        },
+          },
+          "region": {
+            "startLine": 4,
+            "endLine": 4,
+            "startColumn": 5,
+            "endColumn": 8
+          }
+        }
+      ]
+    },
+    {
+      "ruleID": "NOEFF",
+      "level": "warning",
+      "message": {
+        "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
+      },
+      "locations": [
         {
-          "ruleId": "AGROW",
-          "level": "note",
-          "message": {
-            "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 4,
-                  "endLine": 4,
-                  "startColumn": 5,
-                  "endColumn": 9
-                }
-              }
+          "physicalLocation": {
+            "artifactLocation": {
+              "uri": "dFileMultipleIssues.m",
+              "uriBaseId": "%SRCROOT%"
             }
-          ]
-        },
-        {
-          "ruleId": "NOEFF",
-          "level": "warning",
-          "message": {
-            "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
           },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleErrors.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 7,
-                  "endLine": 7,
-                  "startColumn": 1,
-                  "endColumn": 13
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "DRNDINT",
-          "level": "error",
-          "message": {
-            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "endColumn": 8
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "NOPTS",
-          "level": "note",
-          "message": {
-            "text": "Add a semicolon after the statement to hide the output (in a script)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 2,
-                  "endLine": 2,
-                  "startColumn": 6,
-                  "endColumn": 7
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "AGROW",
-          "level": "note",
-          "message": {
-            "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 4,
-                  "endLine": 4,
-                  "startColumn": 5,
-                  "endColumn": 9
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "NOEFF",
-          "level": "warning",
-          "message": {
-            "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileMultipleIssues.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 7,
-                  "endLine": 7,
-                  "startColumn": 1,
-                  "endColumn": 13
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "DRNDINT",
-          "level": "error",
-          "message": {
-            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "dFileWithSingleIssue.m",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 2,
-                  "endLine": 2,
-                  "startColumn": 1,
-                  "endColumn": 8
-                }
-              }
-            }
-          ]
+          "region": {
+            "startLine": 7,
+            "endLine": 7,
+            "startColumn": 1,
+            "endColumn": 12
+          }
         }
       ]
     }
