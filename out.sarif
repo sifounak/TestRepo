@@ -24,7 +24,7 @@
 			   "physicalLocation": {
 				 "artifactLocation": {
 				   "uri": "4FilenameBeginsWithNumber.m",
-				   "uriBaseId": "SRCROOT"
+				   "uriBaseId": "SRCROOT1"
 				 }
 			   }
 			 }
@@ -41,7 +41,7 @@
 			   "physicalLocation": {
 				 "artifactLocation": {
 				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT"
+				   "uriBaseId": "SRCROOT2"
 				 },
 				 "region": {
 				   "startLine": 1,
@@ -64,7 +64,7 @@
 			   "physicalLocation": {
 				 "artifactLocation": {
 				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT"
+				   "uriBaseId": "SRCROOT3"
 				 },
 				 "region": {
 				   "startLine": 1,
