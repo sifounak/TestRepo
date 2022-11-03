@@ -57,7 +57,7 @@
 		   "ruleId": "DRNDINT",
 		   "level": "error",
 		   "message": {
-			 "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+			 "text": "TESTONLY: 'randint' has been removed. With appropriate code changes, use 'randi' instead."
 		   },
 		   "locations": [
 			 {
