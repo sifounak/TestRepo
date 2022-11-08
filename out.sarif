@@ -1,243 +1,183 @@
 {
-   "version": "2.1.0",
-   "properties": {
-	 "Date": "09-Sep-2022 15:16:31",
-	 "Release": "R2023a",
-	 "CodeAnalyzerConfiguration": "active"
-   },
-   "runs": [
-	 {
-	   "tool": {
-		 "driver": {
-		   "name": "Code Analyzer"
-		 }
-	   },
-	   "results": [
-		 {
-		   "ruleId": "BDFIL",
-		   "level": "error",
-		   "message": {
-			 "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "4FilenameBeginsWithNumber.m",
-				   "uriBaseId": "SRCROOT1"
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DAFSC",
-		   "level": "warning",
-		   "message": {
-			 "text": "Use of a script is disallowed by custom code analyzer configuration."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT2"
-				 },
-				 "region": {
-				   "startLine": 1,
-				   "endLine": 1,
-				   "startColumn": 1,
-				   "endColumn": 2
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DRNDINT",
-		   "level": "error",
-		   "message": {
-			 "text": "TESTONLY: 'randint' has been removed. With appropriate code changes, use 'randi' instead."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT3"
-				 },
-				 "region": {
-				   "startLine": 1,
-				   "endLine": 1,
-				   "startColumn": 1,
-				   "endColumn": 8
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "NOPTS",
-		   "level": "note",
-		   "message": {
-			 "text": "Add a semicolon after the statement to hide the output (in a script)."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 2,
-				   "endLine": 2,
-				   "startColumn": 6,
-				   "endColumn": 7
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "AGROW",
-		   "level": "note",
-		   "message": {
-			 "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 4,
-				   "endLine": 4,
-				   "startColumn": 5,
-				   "endColumn": 9
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "NOEFF",
-		   "level": "warning",
-		   "message": {
-			 "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileMultipleIssues.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 7,
-				   "endLine": 7,
-				   "startColumn": 1,
-				   "endColumn": 13
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DAFSC",
-		   "level": "warning",
-		   "message": {
-			 "text": "Use of a script is disallowed by custom code analyzer configuration."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileWithSingleIssue.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 1,
-				   "endLine": 1,
-				   "startColumn": 1,
-				   "endColumn": 2
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DRNDINT",
-		   "level": "error",
-		   "message": {
-			 "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileWithSingleIssue.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 2,
-				   "endLine": 2,
-				   "startColumn": 1,
-				   "endColumn": 8
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DAFSC",
-		   "level": "warning",
-		   "message": {
-			 "text": "Use of a script is disallowed by custom code analyzer configuration."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileWithSuppressedMsg.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 1,
-				   "endLine": 1,
-				   "startColumn": 1,
-				   "endColumn": 2
-				 }
-			   }
-			 }
-		   ]
-		 },
-		 {
-		   "ruleId": "DRNDINT",
-		   "level": "error",
-		   "message": {
-			 "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
-		   },
-		   "locations": [
-			 {
-			   "physicalLocation": {
-				 "artifactLocation": {
-				   "uri": "dFileWithSuppressedMsg.m",
-				   "uriBaseId": "SRCROOT"
-				 },
-				 "region": {
-				   "startLine": 3,
-				   "endLine": 3,
-				   "startColumn": 1,
-				   "endColumn": 8
-				 }
-			   }
-			 }
-		   ]
-		 }
-	   ]
-	 }
-   ]
- }
+  "version": "2.1.0",
+  "properties": {
+    "Date": "04-Nov-2022 16:39:53",
+    "Release": "R2023a",
+    "CodeAnalyzerConfiguration": "active"
+  },
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Code Analyzer"
+        }
+      },
+      "originalUriBaseIds": {
+        "SRCROOT": "D:\\example\\export\\files"
+      },
+      "files": {
+        "TESTFILENAME_something1": [],
+        "TESTFILENAME_something2": [],
+        "TESTFILENAME_something3": [],
+        "TESTFILENAME_something4": []
+      },
+      "results": [
+        {
+          "ruleId": "BDFIL",
+          "level": "error",
+          "message": {
+            "text": "Unable to run code analysis due to invalid MATLAB file name. MATLAB file names must start with a letter and contain only letters, numbers or underscores."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "4FilenameBeginsWithNumber.m"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileMultipleIssues.m"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "NOPTS",
+          "level": "note",
+          "message": {
+            "text": "Add a semicolon after the statement to hide the output (in a script)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileMultipleIssues.m"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 6,
+                  "endColumn": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AGROW",
+          "level": "note",
+          "message": {
+            "text": "Variable appears to change size on every loop iteration. Consider preallocating for speed."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileMultipleIssues.m"
+                },
+                "region": {
+                  "startLine": 4,
+                  "endLine": 4,
+                  "startColumn": 5,
+                  "endColumn": 9
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "NOEFF",
+          "level": "warning",
+          "message": {
+            "text": "The operation or expression 'T(2.2:7.99);' has no evident effect."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileMultipleIssues.m"
+                },
+                "region": {
+                  "startLine": 7,
+                  "endLine": 7,
+                  "startColumn": 1,
+                  "endColumn": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileWithSingleIssue.m"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 1,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DRNDINT",
+          "level": "error",
+          "message": {
+            "text": "'randint' has been removed. With appropriate code changes, use 'randi' instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "dFileWithSuppressedMsg.m"
+                },
+                "region": {
+                  "startLine": 3,
+                  "endLine": 3,
+                  "startColumn": 1,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
