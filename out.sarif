@@ -45,7 +45,7 @@
         {
           "location": {
             "uriBaseId": "SRCROOT",
-            "uri": "xtra\\hello.m"
+            "uri": "xtra/hello.m"
           }
         }
       ],
@@ -216,7 +216,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uriBaseId": "SRCROOT",
-                  "uri": "xtra\\hello.m"
+                  "uri": "xtra/hello.m"
                 },
                 "region": {
                   "startLine": 1,
@@ -239,7 +239,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uriBaseId": "SRCROOT",
-                  "uri": "xtra\\hello.m"
+                  "uri": "xtra/hello.m"
                 },
                 "region": {
                   "startLine": 2,
