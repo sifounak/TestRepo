@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
   "properties": {
-    "Date": "04-Nov-2022 16:39:53",
+    "Date": "08-Nov-2022 16:58:36",
     "Release": "R2023a",
     "CodeAnalyzerConfiguration": "active"
   },
@@ -9,8 +9,7 @@
     {
       "tool": {
         "driver": {
-          "name": "Code Analyzer",
-          "version": "R2023a"
+          "name": "Code Analyzer"
         }
       },
       "originalUriBaseIds": {
@@ -41,6 +40,12 @@
           "location": {
             "uriBaseId": "SRCROOT",
             "uri": "dFileWithSuppressedMsg.m"
+          }
+        },
+        {
+          "location": {
+            "uriBaseId": "SRCROOT",
+            "uri": "xtra\\hello.m"
           }
         }
       ],
@@ -195,6 +200,52 @@
                   "endLine": 3,
                   "startColumn": 1,
                   "endColumn": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "NOPTS",
+          "level": "note",
+          "message": {
+            "text": "Add a semicolon after the statement to hide the output (in a script)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "xtra\\hello.m"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1,
+                  "startColumn": 7,
+                  "endColumn": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "STRQUOT",
+          "level": "note",
+          "message": {
+            "text": "string('...') is not recommended. Use \"...\" instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uriBaseId": "SRCROOT",
+                  "uri": "xtra\\hello.m"
+                },
+                "region": {
+                  "startLine": 2,
+                  "endLine": 2,
+                  "startColumn": 9,
+                  "endColumn": 24
                 }
               }
             }
