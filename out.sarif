@@ -9,7 +9,8 @@
     {
       "tool": {
         "driver": {
-          "name": "Code Analyzer"
+          "name": "Code Analyzer",
+          "version": "R2023a"
         }
       },
       "originalUriBaseIds": {
@@ -17,6 +18,32 @@
           "uri": "D:\\example\\export\\files"
         }
       },
+      "artifacts": [
+        {
+          "location": {
+            "uriBaseId": "SRCROOT",
+            "uri": "4FilenameBeginsWithNumber.m"
+          }
+        },
+        {
+          "location": {
+            "uriBaseId": "SRCROOT",
+            "uri": "dFileMultipleIssues.m"
+          }
+        },
+        {
+          "location": {
+            "uriBaseId": "SRCROOT",
+            "uri": "dFileWithSingleIssue.m"
+          }
+        },
+        {
+          "location": {
+            "uriBaseId": "SRCROOT",
+            "uri": "dFileWithSuppressedMsg.m"
+          }
+        }
+      ],
       "results": [
         {
           "ruleId": "BDFIL",
