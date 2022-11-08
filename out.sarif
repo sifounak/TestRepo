@@ -13,13 +13,9 @@
         }
       },
       "originalUriBaseIds": {
-        "SRCROOT": "D:\\example\\export\\files"
-      },
-      "files": {
-        "TESTFILENAME_something1": [],
-        "TESTFILENAME_something2": [],
-        "TESTFILENAME_something3": [],
-        "TESTFILENAME_something4": []
+        "SRCROOT": {
+          "uri": "D:\\example\\export\\files"
+        }
       },
       "results": [
         {
