@@ -14,7 +14,7 @@
       },
       "originalUriBaseIds": {
         "SRCROOT": {
-          "uri": "D:\\example\\export\\files"
+          "uri": "file:///D:/example/export/files/"
         }
       },
       "artifacts": [
